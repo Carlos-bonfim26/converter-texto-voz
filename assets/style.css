@@ -64,6 +64,9 @@ button{
     outline: none;
     cursor: pointer;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 select{
     flex: 1;
@@ -80,4 +83,42 @@ select{
     background-size: 1rem;
   background-position-x: calc(100% - 3%);
     background-position-y: 20px;
+}
+@media screen and (max-width:650px){
+    textarea, .row{
+        width: 28rem;
+    }
+}
+@media screen and (max-width:450px){
+    textarea, .row{
+        width: 20rem;
+    }
+    .row{
+        gap: 0.3rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    button p{
+        display: none;
+    }
+}
+@media screen and (max-width:350px){
+    textarea, .row{
+        width: 16rem;
+    }
+    .row{
+        gap: 0.3rem;
+        flex-direction: column;
+        height: fit-content;
+    }
+    select{
+        margin-bottom: 0.6rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    button p{
+        display: none;
+    }
 }
