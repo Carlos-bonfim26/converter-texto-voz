@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{
+    --background1: #0e0c6e;
+    --background2:#7047bd;
+    --color:#F7F5FB;
+    --details:#ea00ff;
+    --textarea: #403d84;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+body{
+    background: linear-gradient(45deg, var(--background1), var(--background2));
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+}
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+span{
+    color: var(--details);
+    border-bottom: 2px solid var(--color);
+}
+textarea{
+width: 37.5rem;
+height: 15.6rem;
+background-color: var(--textarea);
+color: var(--color);
+outline: none;
+border-radius: 0.6rem;
+border: 1px solid var(--color);
+margin-bottom: 1rem;
+font-size: 1rem;
+padding: 1rem;
+resize: none;
+}
+textarea::placeholder{
+    font-size: 1rem;
+    color: var(--color);
+}
+.row{
+    display: flex;
+    gap: 1.2rem;
+    width: 37.5rem;
+    align-items: center;
+}
+button{
+    color: var(--color);
+    background-color: var(--details);
+    padding: 0.6rem 1.8rem;
+    border-radius: 2.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+select{
+    flex: 1;
+    color: var(--color);
+    background-color: var(--textarea);
+    height: 3.125rem;
+    padding: 0 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 2.1rem;
+    appearance: none;
+    background-image: url('divisa-para-baixo.png');
+    background-repeat: no-repeat;
+    background-size: 1rem;
+  background-position-x: calc(100% - 3%);
+    background-position-y: 20px;
+}
